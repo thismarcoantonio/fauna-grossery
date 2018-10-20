@@ -13,9 +13,8 @@
     "url": "git+https://github.com/thismarcoantonio/fauna-grossery.git"
   },
   "keywords": [
-    "grossery list",
-    "react",
-    "nodejs"
+    "grossery-list",
+    "react"
   ],
   "author": "thismarcoantonio",
   "license": "MIT",
