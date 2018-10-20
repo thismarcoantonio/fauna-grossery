@@ -6,9 +6,7 @@ import store from 'data/store'
 import 'app/styles/main.scss'
 
 const App = () => (
-  <div id="app" className="app">
-    <Router store={store} />
-  </div>
+  <Router store={store} />
 )
 
 render(<App />, document.getElementById('app'))

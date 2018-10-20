@@ -1,4 +1,6 @@
 $fonts: (
+	('lato-web', 'Lato-Regular', 400, 'normal'),
+	('lato-web', 'Lato-Bold', 600, 'normal'),
 );
 
 @mixin createFonts($fonts) {
@@ -7,8 +9,8 @@ $fonts: (
 			font-family: #{nth($font, 1)};
 			src: url('../../public/fonts/#{nth($font, 2)}.woff2') format('woff2'),
 				url('../../public/fonts/#{nth($font, 2)}.woff') format('woff'),
-				url('../../public/assets/fonts/#{nth($font, 2)}.eot') format('eot'),
-				url('../../public/assets/fonts/#{nth($font, 2)}.ttf') format('truetype');
+				url('../../public/fonts/#{nth($font, 2)}.eot') format('eot'),
+				url('../../public/fonts/#{nth($font, 2)}.ttf') format('truetype');
 			font-weight: #{nth($font, 3)};
 			font-style: #{nth($font, 4)};
 		}

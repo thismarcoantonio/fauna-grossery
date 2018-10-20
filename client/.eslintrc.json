@@ -31,7 +31,8 @@
     "no-trailing-spaces": "error",
     "array-bracket-spacing": ["error", "never"],
     "no-console": "warn",
-    "no-multi-spaces": "error"
+    "no-multi-spaces": "error",
+    "react/jsx-indent": ["warn", 2]
   },
   "parser": "babel-eslint",
   "settings": {
