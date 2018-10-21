@@ -1,6 +1,12 @@
-const express = require('express')
+import express from 'express'
+import db from './models'
 const app = express()
 
 app.get('/', (req, res) => res.send('hello world'))
 
-app.listen(9000, () => console.log('running at port 9000'))
+app.listen(process.env.PORT || 3000, () => {
+  db.sequelize
+    .authenticate()
+    .then(() => console.log(`app running on port ${process.env.PORT || 3000}`))
+    .catch(err => console.log(`error on db: ${err}`))
+})
