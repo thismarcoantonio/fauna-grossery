@@ -1,5 +1,5 @@
-# Fauna Grossery
-**WEB APP** to create your **grossery list** and manage your **monthly costs**.
+# Fauna Grocery
+**WEB APP** to create your **grocery list** and manage your **monthly costs**.
 
 ## Getting Started
 You'll find two folders in this project root:
