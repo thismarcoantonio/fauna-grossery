@@ -1,5 +1,5 @@
 {
-  "name": "fauna-grossery-server",
+  "name": "fauna-grocery-server",
   "version": "0.0.1",
   "description": "empty",
   "main": "index.js",
@@ -15,19 +15,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thismarcoantonio/fauna-grossery.git"
+    "url": "git+https://github.com/thismarcoantonio/fauna-grocery.git"
   },
   "keywords": [
-    "fauna-grossery",
-    "grossery-list",
+    "fauna-grocery",
+    "grocery-list",
     "nodejs"
   ],
   "author": "thismarcoantonio",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thismarcoantonio/fauna-grossery/issues"
+    "url": "https://github.com/thismarcoantonio/fauna-grocery/issues"
   },
-  "homepage": "https://github.com/thismarcoantonio/fauna-grossery#readme",
+  "homepage": "https://github.com/thismarcoantonio/fauna-grocery#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "cross-env": "^5.2.0",

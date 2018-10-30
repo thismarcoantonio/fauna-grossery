@@ -1,5 +1,5 @@
 {
-  "name": "fauna-grossery",
+  "name": "fauna-grocery",
   "version": "0.1.0",
   "description": "empty",
   "main": "./src/app.js",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thismarcoantonio/fauna-grossery.git"
+    "url": "git+https://github.com/thismarcoantonio/fauna-grocery.git"
   },
   "keywords": [
-    "grossery-list",
+    "grocery-list",
     "react"
   ],
   "author": "thismarcoantonio",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thismarcoantonio/fauna-grossery/issues"
+    "url": "https://github.com/thismarcoantonio/fauna-grocery/issues"
   },
-  "homepage": "https://github.com/thismarcoantonio/fauna-grossery#readme",
+  "homepage": "https://github.com/thismarcoantonio/fauna-grocery#readme",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",

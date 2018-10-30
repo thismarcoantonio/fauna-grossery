@@ -1,5 +1,5 @@
 export default {
-  database: 'faunagrossery',
+  database: 'faunagrocery',
   username: '',
   password: '',
   params: {
