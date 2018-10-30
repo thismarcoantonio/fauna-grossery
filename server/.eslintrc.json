@@ -24,7 +24,12 @@
     "array-bracket-spacing": ["error", "never"],
     "no-multi-spaces": "error",
     "no-console": "off",
-    "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }]
+    "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
+    "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "no-const-assign": "error",
+    "no-var": "error",
+    "rest-spread-spacing": ["error", "never"]
   },
   "globals": {
     "describe": true,
