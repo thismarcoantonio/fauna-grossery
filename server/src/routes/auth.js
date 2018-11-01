@@ -38,4 +38,12 @@ export default (app) => {
 
     return res.sendStatus(401);
   });
+
+  app.get('/', (req, res) => {
+    res.json({
+      appName: 'fauna-grocery',
+      appUrl: 'nothing yet',
+      gitBranch: 'https://github.com/thismarcoantonio/fauna-grocery'
+    });
+  });
 };
