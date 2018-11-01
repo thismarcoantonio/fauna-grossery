@@ -6,8 +6,8 @@
   "scripts": {
     "clean": "rm -rf build && mkdir build",
     "start": "cross-env NODE_ENV=dev nodemon --exec babel-node ./index",
-    "build": "npm run clean && babel -d ./build ./index -s",
-    "heroku": "cross-env NODE_ENV=prod npm run build && node ./build",
+    "build": "npm run clean && babel -d ./build ./ --config-file ./.babelrc",
+    "heroku": "npm run build && cross-env NODE_ENV=prod node ./build",
     "test": "cross-env NODE_ENV=test mocha --reporter spec --slow 5000 --require @babel/register tests/integration/**/*.js"
   },
   "engines": {
