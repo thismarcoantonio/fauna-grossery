@@ -1,15 +1,15 @@
-import { css } from 'styled-components'
-import { sizes } from './sizes'
+import { css } from 'styled-components';
+import { sizes } from './sizes';
 
 export const media = Object.keys(sizes).reduce((acc, label) => {
   acc[label] = (...args) => css`
     @media (min-width: ${sizes[label] / 16}em) {
       ${css(...args)}
     }
-  `
+  `;
 
-  return acc
-}, {})
+  return acc;
+}, {});
 
 export const colors = {
   blueRoyal: '#2A62F4',
@@ -19,4 +19,4 @@ export const colors = {
   darkBlue: '#091E42',
   white: '#FFFFFF',
   black: '#000000'
-}
+};

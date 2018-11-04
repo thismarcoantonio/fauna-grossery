@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { colors, media } from '../../utils/styles'
-import { vh, vw, rem } from '../../utils/sizes'
+import styled from 'styled-components';
+import { colors, media } from '../../utils/styles';
+import { vh, vw, rem } from '../../utils/sizes';
 
 export const Background = styled.div`
   width: 100vw;
@@ -14,7 +14,7 @@ export const Background = styled.div`
   background-image: url('/images/fauna-background.png');
 
   ${media.md`justify-content: flex-start;`}
-`
+`;
 
 export const Card = styled.section`
   width: ${vw(344)};
@@ -57,7 +57,7 @@ export const Card = styled.section`
     width: ${rem(547)};
     padding: ${rem(1)} ${rem(157)} 0 ${rem(80)};
   `}
-`
+`;
 
 export const CardTitle = styled.h1`
   font-size: ${vh(16)};
@@ -71,7 +71,7 @@ export const CardTitle = styled.h1`
     font-size: ${rem(16)};
     text-align: left;
   `}
-`
+`;
 
 export const CardSubtitle = styled.h2`
   font-size: ${vh(32)};
@@ -96,7 +96,7 @@ export const CardSubtitle = styled.h2`
     font-size: ${rem(32)};
     margin-top: ${rem(6)};
   `}
-`
+`;
 
 export const SmallContent = styled.div`
   display: flex;
@@ -113,7 +113,7 @@ export const SmallContent = styled.div`
     margin-top: ${rem(22)};
     margin-left: ${rem(20)};
   `}
-`
+`;
 
 export const SmallText = styled.small`
   font-size: ${vh(14)};
@@ -123,7 +123,7 @@ export const SmallText = styled.small`
   ${media.ph`font-size: ${vh(14, 'ph')};`}
   ${media.sm`font-size: ${vh(14, 'sm')};`}
   ${media.md`font-size: ${rem(14)};`}
-`
+`;
 
 export const SmallLink = styled.a`
   cursor: pointer;
@@ -158,4 +158,4 @@ export const SmallLink = styled.a`
     color: ${colors.darkBlue};
     border-bottom: 1px solid ${colors.darkBlue};
   }
-`
+`;
