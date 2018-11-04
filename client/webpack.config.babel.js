@@ -1,9 +1,9 @@
-import { resolve } from 'path'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
-import MiniCSSExtractPlugin from 'mini-css-extract-plugin'
-import config from './config'
+import { resolve } from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCSSExtractPlugin from 'mini-css-extract-plugin';
+import config from './config';
 
-const devMode = process.env.NODE_ENV === 'development'
+const devMode = process.env.NODE_ENV === 'development';
 
 export default {
   devtool: devMode ? 'cheap-module-eval-source-map' : null,
@@ -97,4 +97,4 @@ export default {
       }
     }
   }
-}
+};

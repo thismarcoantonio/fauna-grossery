@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { Background, Card, CardTitle, CardSubtitle, SmallContent, SmallText, SmallLink } from './styled'
-import AuthForm from '../auth-form'
+import React, { Component } from 'react';
+import { Background, Card, CardTitle, CardSubtitle, SmallContent, SmallText, SmallLink } from './styled';
+import AuthForm from '../auth-form';
 
-class AuthPage extends Component {
+class Auth extends Component {
   state = {
     haveAccount: false
   }
@@ -22,8 +22,8 @@ class AuthPage extends Component {
           </SmallContent>
         </Card>
       </Background>
-    )
+    );
   }
 }
 
-export default AuthPage
+export default Auth;

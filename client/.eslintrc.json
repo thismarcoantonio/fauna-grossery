@@ -21,7 +21,7 @@
   "rules": {
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "quotes": ["error","single"],
-    "semi": ["error","never"],
+    "semi": ["error", "always"],
     "default-case": "error",
     "no-alert": "error",
     "eol-last": "error",
@@ -32,7 +32,13 @@
     "array-bracket-spacing": ["error", "never"],
     "no-console": "warn",
     "no-multi-spaces": "error",
-    "react/jsx-indent": ["warn", 2]
+    "react/jsx-indent": ["warn", 2],
+    "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
+    "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "no-const-assign": "error",
+    "no-var": "error",
+    "rest-spread-spacing": ["error", "never"]
   },
   "parser": "babel-eslint",
   "settings": {

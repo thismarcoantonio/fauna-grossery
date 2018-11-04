@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { colors, media } from '../../utils/styles'
-import { vh, vw, rem } from '../../utils/sizes'
+import styled from 'styled-components';
+import { colors, media } from '../../utils/styles';
+import { vh, vw, rem } from '../../utils/sizes';
 
 export const Form = styled.form`
   margin-top: ${vh(53)};
@@ -8,7 +8,7 @@ export const Form = styled.form`
   ${media.ph`margin-top: ${vh(52, 'ph')};`}
   ${media.sm`margin-top: ${vh(53, 'sm')};`}
   ${media.md`margin-top: ${rem(53)};`}
-`
+`;
 
 export const Input = styled.input`
   width: 100%;
@@ -59,7 +59,7 @@ export const Input = styled.input`
   &:focus {
     border-color: ${colors.blueRoyal};
   }
-`
+`;
 
 export const Button = styled.button`
   border: 0;
@@ -99,4 +99,4 @@ export const Button = styled.button`
   ${media.lg`
     margin-top: ${rem(15)};
   `}
-`
+`;
