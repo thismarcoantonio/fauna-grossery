@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { hot } from 'react-hot-loader';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { isDev } from '../utils/conditions';
 import Auth from '../components/auth';
 import Resume from '../components/resume';
 import Lists from '../components/lists';
@@ -42,4 +44,4 @@ class CustomRouter extends Component {
   }
 }
 
-export default CustomRouter;
+export default isDev ? hot(module)(CustomRouter) : CustomRouter;

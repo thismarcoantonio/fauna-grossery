@@ -1,4 +1,5 @@
 import { resolve } from 'path';
+import { HotModuleReplacementPlugin } from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCSSExtractPlugin from 'mini-css-extract-plugin';
 import config from './config';
@@ -76,7 +77,8 @@ export default {
     compress: true,
     historyApiFallback: true,
     port: process.env.PORT || 3000,
-    contentBase: resolve(__dirname, 'public')
+    contentBase: resolve(__dirname, 'public'),
+    hot: true
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -84,7 +86,8 @@ export default {
       template: 'index.html',
       minify: { collapseWhitespace: true }
     }),
-    new MiniCSSExtractPlugin({ filename: 'style.css' })
+    new MiniCSSExtractPlugin({ filename: 'style.css' }),
+    new HotModuleReplacementPlugin()
   ],
   optimization: {
     splitChunks: {
