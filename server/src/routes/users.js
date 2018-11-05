@@ -2,8 +2,7 @@ export default (app) => {
   const { Users } = app.data.models;
 
   app.route('/users')
-    .all(app.auth.authenticate())
-    .get((req, res) => Users.findAll({})
+    .get(app.auth.authenticate(), (req, res) => Users.findAll({})
       .then((response) => {
         res.status(200);
         res.json(response);

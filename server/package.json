@@ -29,6 +29,7 @@
   "homepage": "https://github.com/thismarcoantonio/fauna-grocery#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "jwt-simple": "^0.5.5",
