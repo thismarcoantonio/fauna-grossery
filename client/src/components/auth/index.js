@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Background, Card, CardTitle, CardSubtitle, SmallContent, SmallText, SmallLink } from './styled';
-import AuthForm from '../auth-form';
+import AuthForm from '../../containers/auth-form';
 
 class Auth extends Component {
   state = {
