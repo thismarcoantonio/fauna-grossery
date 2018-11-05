@@ -1,5 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 import data from './src/config/data';
 import usersRoute from './src/routes/users';
 import authRoute from './src/routes/auth';
@@ -7,6 +8,7 @@ import authorization from './auth';
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 app.data = data(app);
 
 const auth = authorization(app);
