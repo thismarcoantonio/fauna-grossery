@@ -1,10 +1,10 @@
-import { SUBMIT_FORM, ERROR_FORM, SUCCESS_FORM } from '../actions/auth';
+import { SUBMIT_FORM, SUCCESS_FORM, ERROR_FORM } from '../actions/auth';
 
 const defaultState = {
   loading: false,
   loaded: false,
   error: null,
-  success: null
+  payload: {}
 };
 
 export default (state = defaultState, action = {}) => {
@@ -15,19 +15,21 @@ export default (state = defaultState, action = {}) => {
         loading: true,
         loaded: false
       };
+    case SUCCESS_FORM:
+      return {
+        ...state,
+        loaded: true,
+        loading: false,
+        payload: {
+          token: action.token
+        }
+      };
     case ERROR_FORM:
       return {
         ...state,
         loaded: true,
         loading: false,
         error: action.error
-      };
-    case SUCCESS_FORM:
-      return {
-        ...state,
-        loaded: true,
-        loading: false,
-        success: true
       };
     default:
       return state;
