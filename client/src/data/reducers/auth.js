@@ -4,7 +4,7 @@ const defaultState = {
   loading: false,
   loaded: false,
   error: null,
-  success: null
+  payload: {}
 };
 
 export default (state = defaultState, action = {}) => {
@@ -20,7 +20,9 @@ export default (state = defaultState, action = {}) => {
         ...state,
         loaded: true,
         loading: false,
-        success: true
+        payload: {
+          token: action.token
+        }
       };
     case ERROR_FORM:
       return {

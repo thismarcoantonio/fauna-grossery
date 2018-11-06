@@ -2,8 +2,8 @@ import { connect } from 'react-redux';
 import { registerUser } from '../data/actions/auth';
 import AuthForm from '../components/auth-form';
 
-const mapStateToProps = () => ({
-
+const mapStateToProps = state => ({
+  ...state.auth
 });
 
 const mapDispatchToProps = dispatch => ({
