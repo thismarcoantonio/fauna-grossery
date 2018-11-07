@@ -29,7 +29,7 @@ Please read [CONTRIBUTING.md](./contributing.md) for details about code of condu
 * [**thismarcoantonio**](https://github.com/thismarcoantonio) - *Repo Owner*
 
 ## Contributors
-Maybe you?
+* [**rntgspr**](https://github.com/rntgspr)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
