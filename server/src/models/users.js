@@ -1,23 +1,31 @@
-export default (sequelize, DataType) => sequelize
-  .define('Users', {
+export default (sequelize, DataTypes) => {
+  const Users = sequelize.define('Users', {
     id: {
-      type: DataType.INTEGER,
+      type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true
     },
     username: {
-      type: DataType.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: { notEmpty: true }
     },
     email: {
-      type: DataType.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: { notEmpty: true }
     },
     password: {
-      type: DataType.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: { notEmpty: true }
     }
   });
+
+  Users.associate = (models) => {
+    models.Users.hasMany(models.Grocery, { foreignKey: 'id', as: 'lists' });
+    models.Users.hasMany(models.Wishes, { foreignKey: 'id', as: 'wishes' });
+  };
+
+  return Users;
+};

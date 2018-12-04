@@ -9,11 +9,7 @@ const loadModels = (sequelize) => {
     .readdirSync(dir)
     .reduce((accumulator, file) => {
       const model = sequelize.import(path.join(dir, file));
-
-      return {
-        ...accumulator,
-        [model.name]: model
-      };
+      return { ...accumulator, [model.name]: model };
     }, {});
 };
 
@@ -26,6 +22,8 @@ export default () => {
     options
   );
   const database = { sequelize, Sequelize, models: loadModels(sequelize) };
+
+  Object.values(database.models).forEach(model => model.associate && model.associate(database.models));
 
   sequelize.sync().done(() => database);
   return database;

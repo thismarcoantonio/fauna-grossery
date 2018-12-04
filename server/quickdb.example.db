@@ -1,0 +1,53 @@
+Users
+-
+id PK UUID
+username string
+email string
+password string
+lists UUID FK >- GroceryList.id
+wallet UUID
+wishes UUID
+
+GroceryList
+-
+id PK UUID FK >- GroceryItem.lists
+name string
+date date
+description NULL string
+items UUID
+
+GroceryItem
+-
+id PK UUID FK >- GroceryList.items
+name string
+lists UUID
+price float
+userId array
+
+Wallet
+-
+id PK UUID FK >- Users.wallet
+balance float
+accumulated float
+costs UUID FK >- WalletItem.id
+userId UUID FK >- Users.id
+
+WalletItem
+-
+id PK UUID
+name string
+price float
+date date
+montly boolean
+primary boolean
+description NULL string
+walletId UUID
+
+Wishes
+-
+id PK UUID FK >- Users.wishes
+name string
+price float
+description NULL string
+icon NULL string
+userIds Array
